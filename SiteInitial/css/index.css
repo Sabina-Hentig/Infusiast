@@ -1,0 +1,125 @@
+/* General Container */
+.container {
+    min-height: 56vh;
+    text-align: center;
+}
+
+/* Slider Styles */
+#slider {
+    overflow: hidden;
+    max-width: 50%;
+    margin: auto;
+    margin-bottom: 2rem; /* Add some space below the slider */
+}
+
+@keyframes slider {
+    0% { left: 0; }
+    30% { left: 0; }
+    33% { left: -100%; }
+    63% { left: -100%; }
+    66% { left: -200%; }
+    95% { left: -200%; }
+    100% { left: 0; }
+}
+
+#slider figure {
+    width: 300%;
+    display: flex;
+    position: relative;
+    animation: 9s slider infinite;
+    margin: 0;
+}
+
+#slider figure:hover {
+    /*animation-play-state: paused; enable for pause on hover*/
+}
+
+#slider figure img {
+    width: 33.333%;
+    height: auto;
+    max-height: 300px; /* Adjust the height to your preference */
+}
+
+/* Product List Styles */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem; /* Space between products */
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px; /* Adjust the width as needed */
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.tea-table-btn {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 3px;
+    background-color: #223d2e;
+    color: white;
+    cursor: pointer;
+}
+
+.tea-table-btn:hover {
+    background-color: #37634b;
+}
+
+/* Table Styles */
+table {
+    width: 60vw;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:first-child th:first-child {
+    border-top-left-radius: 5px;
+}
+
+tr:first-child th:last-child {
+    border-top-right-radius: 5px;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 5px;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 5px;
+}
+.tea-table-img {
+    height: 5.5rem;
+    width: 5.5rem;
+    border-radius: 5px;
+  }

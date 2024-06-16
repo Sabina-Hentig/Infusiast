@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Infusiast - the tea store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="poze/logo-teastore.png">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+<header>
+    <div class="header">
+
+        <img class="company-logo" src="poze/logo-teastore.png" alt="Logo">
+
+        <div class="header-container">
+            <div class="header-btn-container">
+                <a class="header-btn" href="index.php">Home</a>
+                <a class="header-btn" href="tea.php">Tea</a>
+                <a class="header-btn" href="accessories.php">Accessories</a>
+                <a class="header-btn" href="contact.html">Contact</a>
+            </div>
+            <div class="header-btn-container2">
+                <a class="header-btn2" href="login.html">
+                    <img src="poze/user.png" alt="User" class="user-icon">
+                    Account
+                </a>
+
+                <a class="header-btn2" href="basket.php">
+                    <img src="poze/basket.png" alt="Basket" class="basket-icon">
+                    Basket
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<br>
+<br>
+
+<div class="container">
+
+    <h1>Contact</h1>
+    <div class="form-container">
+        <h2>Contact Form</h2>
+        <br>
+        <form class="form-fields" method="post" action="contact_form.php">
+            <div class="form-field">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-field">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-field">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button class="submit-button" type="submit">Send</button>
+        </form>
+    </div>
+    <br>
+<br>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21863.31171727607!2d23.563048815970642!3d46.76659228732342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c28706c8277%3A0xc25e4a8111c461b7!2sFacultatea%20De%20Matematic%C4%83%20%C8%99i%20Informatic%C4%83!5e0!3m2!1sro!2sro!4v1713988361293!5m2!1sro!2sro"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+<br>
+<br>
+
+<footer>
+    <div class="footer">
+        <div class="footer-contact-info">
+            <p>Mail: <a href="mailto:tea@infusiast.com">tea@infusiast.com</a></p>
+            <p>|</p>
+            <p>Tel.: +40 740 000 000</p>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2024 Infusiast srl. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+

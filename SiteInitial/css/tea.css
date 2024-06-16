@@ -1,0 +1,96 @@
+.container {
+    min-height: 56vh;
+    text-align: center;
+}
+
+.product-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.tea-table-btn{
+    padding: 0.5rem;
+    border: none;
+    border-radius: 3px;
+    background-color: #223d2e;
+    color: white;
+    cursor: pointer;
+}
+.tea-table-btn:hover{
+    background-color: #37634b;
+}
+.tea-table-img{
+    height: 5.5rem;
+    width: 5.5rem;
+    border-radius: 5px;
+}
+
+table {
+    width: 60vw;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:first-child th:first-child {
+    border-top-left-radius: 5px;
+}
+
+tr:first-child th:last-child {
+    border-top-right-radius: 5px;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 5px;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 5px;
+}
+
+.navigate-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.navigate-button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
